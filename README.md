@@ -61,7 +61,7 @@ External power supply is used for the motors in my experiments. Send part and re
 
 ## Usage
 
-run ./imu_send/imu_send.ino and imu_receive/imu_receive.ino.
+run `./imu_send/imu_send.ino` and `imu_receive/imu_receive.ino`.
 
 You can see in the Serial Monitor in Arduino IDE that there'll be a countdown for initialization. Place the imu still(preferably on a flat surface) and wait for the calibration to complete. Then the roll, pitch and yaw angle will be calculated based on the initialization pose rather than world coordinates, because accelerometer and magnetometer uses absolute measurement values.
 
