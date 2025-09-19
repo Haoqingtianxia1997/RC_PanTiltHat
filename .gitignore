@@ -1,0 +1,6 @@
+# Altium Designer related
+__Previews/
+History/
+
+# MacOS related
+.DS_Store
