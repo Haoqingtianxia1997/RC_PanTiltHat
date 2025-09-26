@@ -32,7 +32,7 @@ Pan tilt hat (by Pimoroni)
 
 ## Pin Connection
 
-Note: For this specific rf-nano model, in order to enable wireless connection, set CE to D10 and CSN to D9. There're many variants on the market. Some with CE-->D7&CSN-->D8 combination, some in reverse(CE --> D8 & CSN --> D7), and some with CE --> D9 & CSN --> D10. Extra attention is needed before make the wireless connection work.
+Note: For this specific rf-nano model, in order to enable wireless connection, set CE to D10 and CSN to D9. There're many variants on the market. Some with CE-->D7&CSN-->D8 combination, some in reverse(CE --> D8 & CSN --> D7), and some with CE --> D9 & CSN --> D10. Extra attention is needed before make the wireless connection work. You can find the schematic in the folder "Circuit Schematic".
 
 ### send
 
@@ -65,9 +65,20 @@ run `./imu_send/imu_send.ino` and `imu_receive/imu_receive.ino`.
 
 You can see in the Serial Monitor in Arduino IDE that there'll be a countdown for initialization. Place the imu still(preferably on a flat surface) and wait for the calibration to complete. Then the roll, pitch and yaw angle will be calculated based on the initialization pose rather than world coordinates, because accelerometer and magnetometer uses absolute measurement values.
 
+## PCB
+As shown in the figure below, if you want to use an integrated circuit board instead of flying leads, you can print the circuit board using the given PCB design.
+<p align="center">
+  <img src="/assets/Transmitter.png" alt="Fig.2 Transmiiter PCB Setup" width="600">
+</p>
+<p align="center"><strong>Fig.2 Transmiiter PCB Setup</strong></p>
+<p align="center">
+  <img src="/assets/Receiver.png" alt="Fig.3 Receiverer PCB Setup" width="600">
+</p>
+<p align="center"><strong>Fig.3 Receiver PCB Setup</strong></p>
+
+
 ## TODO
 
 1. Use cross platform communication as the receiver board, e.g. stm32f103c8t6. Servo motor control has already been done. Configuration for nRF24L01 to the stm32 board needs extra work.
 2. Incorporate gyroscope measurements to improve accuracy of yaw angle.
 3. Explore limitation of microcontrollers by applying more computationally expensive filters to further smooth out the data fluctuations.
-4. Add schematics and PCB design.
