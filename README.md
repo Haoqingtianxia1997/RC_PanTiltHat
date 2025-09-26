@@ -30,6 +30,14 @@ Pan tilt hat (by Pimoroni)
 - 2 degrees of freedom(DoF), use SG90 servo motors
 - Link: https://shop.pimoroni.com/products/pan-tilt-hat?variant=22408353287
 
+ESP32 based WiFi network camera
+
+- Taobao Link：https://item.taobao.com/item.htm?abbucket=10&detail_redpacket_pop=true&id=814538029198&ltk2=1746736425589qym9w3voqjlac4o8wvua&ns=1&priceTId=2100c89117467361605063657e0bf4&query=wifi%E6%91%84%E5%83%8F%E5%A4%B4&skuId=5511308229605&spm=a21n57.1.hoverItem.2&utparam=%7B%22aplus_abtest%22%3A%22d5afbfdf46d22d7b5c3b3b61590d27a5%22%7D&xxc=taobaoSearch
+
+3D printed connectors
+
+- You can find it in the document and print it yourself.
+
 ## Pin Connection
 
 Note: For this specific rf-nano model, in order to enable wireless connection, set CE to D10 and CSN to D9. There're many variants on the market. Some with CE-->D7&CSN-->D8 combination, some in reverse(CE --> D8 & CSN --> D7), and some with CE --> D9 & CSN --> D10. Extra attention is needed before make the wireless connection work. You can find the schematic in the folder "Circuit Schematic".
